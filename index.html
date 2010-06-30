@@ -1216,7 +1216,7 @@
 				t5: function() {
 					var item = {
 						title: 	'AAC support', 
-						passed:	!!this.element.canPlayType && this.canPlayType('audio/mp4; codecs="mp4a.40.2"')
+						passed:	!!this.element.canPlayType && this.canPlayType('audio/aac; codecs="mp4a.40.2"') /*Changing the MIME to audio/aac while keeping the codec the same causes WebKit to pass the test - CyberSkull */
 					};
 					
 					if (item.passed) item.bonus = 1;

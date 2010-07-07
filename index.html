@@ -1183,7 +1183,7 @@
 
 				t3: function() {
 					var item = {
-						title: 	'PCM audio support', 
+						title: 	'WAV PCM audio support', 
 						passed:	!!this.element.canPlayType && this.canPlayType('audio/wav; codecs="1"')
 					};
 					
@@ -1215,8 +1215,8 @@
 
 				t5: function() {
 					var item = {
-						title: 	'AAC support', 
-						passed:	!!this.element.canPlayType && this.canPlayType('audio/aac; codecs="mp4a.40.2"') /*Changing the MIME to audio/aac while keeping the codec the same causes WebKit to pass the test - CyberSkull */
+						title: 	'MP4 AAC support', 
+						passed:	!!this.element.canPlayType && this.canPlayType('audio/mp4; codecs="mp4a.40.2"')
 					};
 					
 					if (item.passed) item.bonus = 1;
